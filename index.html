@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rector Dashboard</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid px-4 py-4">
+      <div class="row g-4">
+       
+        <aside class="col-lg-2 bg-white rounded-4 shadow-sm">
+  <div
+    class="header d-flex align-items-center justify-content-center px-3"
+  >
+    <img src="icons/logo.png" height="32" alt="Logo" />
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="p-3">
+    
+    <nav class="sidebar-menu">
+      <ul class="list-unstyled mb-0">
+        <li class="mb-2">
+          <a href="#" class="sidebar-menu-item active d-flex align-items-center p-2 text-decoration-none rounded">
+            <img src="icons/dashboards.png" height="20" alt="Dashboard" class="me-2">
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="mb-2">
+          <a href="#" class="sidebar-menu-item d-flex align-items-center p-2 text-decoration-none rounded">
+            <img src="icons/project.png" height="20" alt="Projects" class="me-2">
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="sidebar-menu-item d-flex align-items-center p-2 text-decoration-none rounded">
+            <img src="icons/report.png" height="20" alt="Reports" class="me-2">
+            <span>Reports</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
+
+        
+        <main class="col bg-white rounded-4 shadow-sm">
+          <div
+            class="header d-flex align-items-center justify-content-between px-4"
+          >
+            <h5 class="mb-0">Rector</h5>
+            <div
+              class="d-flex align-items-center gap-2 px-3 py-1 rounded-pill"
+              style="background-color: white; border: 3px solid #eeeeee"
+            >
+              <img src="icons/cat.png" height="24" width="24" alt="Avatar" />
+              <span>K.Gulnara</span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="p-4">
+            <div class="project-overview-box">
+              <h5>Project Overview</h5>
+              <div class="stats-container">
+                
+                <div class="stats-grid">
+                  <div class="row g-2">
+                    
+                    <div class="col-6">
+                      <div class="stat-box">
+                        <div>Total Projects</div>
+                        <div class="stat-number">21</div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="col-6">
+                      <div class="stat-box">
+                        <div>In Progress</div>
+                        <div class="stat-number">14</div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="col-6">
+                      <div class="stat-box">
+                        <div>Completed</div>
+                        <div class="stat-number">7</div>
+                      </div>
+                    </div>
+
+                    
+                    <div class="col-6">
+                      <div class="stat-box">
+                        <div style="color: #ca0000">Overdue</div>
+                        <div class="stat-number">3</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                
+                <div class="chart-space">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <div class="project-list-section mt-4">
+          <div class="d-flex flex-column mb-3">
+            <h5 class="mb-2">Project List</h5> 
+            <div class="search-container" style="max-width: 300px;">
+              <div class="position-relative">
+                <input type="text" class="form-control search-box" placeholder="Search projects" style="padding-left: 40px; border: 3px #eeeeee solid">
+                <img src="icons/glass.png" height="16" alt="Search" class="position-absolute" style="left: 15px; top: 50%; transform: translateY(-50%);">
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="table-responsive">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Manager</th>
+                  <th>Status</th>
+                  <th>Due Date</th>
+                  <th>Team Members</th>
+                </tr>
+              </thead>
+                            <tbody>
+                <tr>
+                  <td>Cool Proj</td>
+                  <td>C. Danil</td>
+                  <td><span class="badge bg-success">Completed</span></td>
+                  <td>2025-03-15</td>
+                  <td>3</td> 
+                </tr>
+                <tr>
+                  <td>Cool Proj</td>
+                  <td>C. Danil</td>
+                  <td><span class="badge bg-warning">In Progress</span></td>
+                  <td>2025-03-15</td>
+                  <td>2</td> 
+                </tr>
+                <tr>
+                  <td>Cool Proj</td>
+                  <td>C. Danil</td>
+                  <td><span class="badge bg-danger">Overdue</span></td>
+                  <td>2025-03-15</td>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
